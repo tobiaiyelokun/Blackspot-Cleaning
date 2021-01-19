@@ -27,7 +27,7 @@
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 			<a class="navbar-brand" href="#">Black Spot Cleaning Operations</a>
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				
+
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -35,23 +35,23 @@
 			</form>
 		</div>
 	</nav>
-	
-	<div class="container-fluid"> 
+
+	<div class="container-fluid">
 	<div class="row">
-		
-		
-		<div class="col-md-3 border border-light"> 
+
+
+		<div class="col-md-3 border border-light">
 			<h2 class="text-center"> Waste Management Monitoring and Evaluation</h2>
 			<br>
 			<p > <strong> Black spots are noticable pile of garbage indiscriminately dumped into the environment. </strong> </p>
 			<p > <strong>This web map demonstrates the ultization of GIS for monitoring of black spot cleaning.</strong></p>
-			<p > <strong>Click layers to view state of black spot before, during and after cleaning</strong></p>
+			<p > <strong>Click Markers to view black spot bcleaning operations</strong></p>
 
 		</div>
 		<div id="map"  class="col-md-9"> </div>
 
 	</div>
-	
+
 </div>
 
 
@@ -64,7 +64,7 @@
     </footer>
 
 
-	
+
 	<script src="js/qgis2web_expressions.js"></script>
 	<script src="js/leaflet.js"></script><script src="js/L.Control.Locate.min.js"></script>
 	<script src="js/leaflet.rotatedMarker.js"></script>
@@ -82,7 +82,7 @@
 			zoomControl:true, maxZoom:28, minZoom:1
 		}).fitBounds([[6.254218396228684,2.9227737768216846],[7.015950798245597,4.301278596471685]]);
 		var hash = new L.Hash(map);
-		map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+		map.attributionControl.setPrefix('<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 		L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
 		var measureControl = new L.Control.Measure({
 			position: 'topleft',
